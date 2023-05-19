@@ -62,7 +62,7 @@
         <!-- Features Section -->
         <section class="features section">
             <div class="container">
-                <h2 class="features-hidden-header">Services</h2>
+                <h2 class="visually-hidden">Services</h2>
                 <ul class="list features-section-list">
                     <li class="fetures-list-item">
                         <div class="features-icon-item"><svg class="features-icon" width="64" height="64">
@@ -308,6 +308,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
+
+            <!-- LOGO -->
             <div class="logo-footer-container">
                 <a class="logo link logo-footer-link" href="./index.html">Web<span
                         class="logo-theme-light">Studio</span>
@@ -318,6 +320,8 @@
                     solutions.
                 </p>
             </div>
+
+            <!-- SOCIAL MEDIA -->
             <div class="footer-social-container">
                 <p class="social-footer-header">Social media</p>
                 <ul class="list footer-social-list">
@@ -347,6 +351,22 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- SUBSCRIPTION -->
+            <div class="footer-subscription-container">
+                <form class="footer-form">
+                    <p class="footer-form-header">Subscribe</p>
+                    <div class="footer-subscription-wrapper">
+                        <input type="email" name="user_email" class="footer-form-input" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail">
+                        <button type="submit" class="footer-submit-btn">Subscribe
+                            <svg class="footer-form-btn-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-message"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
     <!-- MODAL WINDOW -->
@@ -357,6 +377,53 @@
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
+
+            <!-- MODAL FORM -->
+            <form class="modal-form">
+                <p class="modal-form-header">Leave your contacts and we will call you back</p>
+                <label class="modal-form-field">
+                    <span class="modal-input-descr">Name</span>
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" id="name" name="user_name" class="modal-form-input" required
+                            pattern="^[a-zA-Z]+$" minlength="2">
+                        <svg class="modal-form-input-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-input-descr">Phone</span>
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" id="tel" name="user_phone" class="modal-form-input" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9][2]">
+                        <svg class="modal-form-input-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-input-descr">Email</span>
+                    <span class="modal-form-input-wrapper">
+                        <input type="email" id="email" name="user_email" class="modal-form-input" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <svg class="modal-form-input-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-input-descr">Comment</span>
+                    <textarea name="user_message" class="modal-form-message" placeholder="Text input">
+                    </textarea>
+                </label>
+                <input id="user-policy" type="checkbox" name="user_policy"
+                    class="modal-form-check-checked visually-hidden">
+                <label for="user-policy" class="modal-form-check-descr">&nbsp;
+                    I accept the terms and conditions of the&nbsp;<a class="user-policy-link" href="#">Privacy
+                        Policy</a>
+                </label>
+                <button type="submit" class="modal-form-submit-btn">Send</button>
+            </form>
         </div>
     </div>
 

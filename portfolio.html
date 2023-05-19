@@ -54,7 +54,7 @@
         <!-- Filter Section-->
         <section class=" section portfolio-section">
             <div class="container">
-                <h1 class="filter-hidden-header">Filter</h1>
+                <h1 class="visually-hidden">Filter</h1>
                 <ul class="list filter-section-list">
                     <li>
                         <button class="button" type="button">All</button>
@@ -226,6 +226,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
+
+            <!-- LOGO -->
             <div class="logo-footer-container">
                 <a class="logo link logo-footer-link" href="./index.html">Web<span
                         class="logo-theme-light">Studio</span>
@@ -236,6 +238,8 @@
                     solutions.
                 </p>
             </div>
+
+            <!-- SOCIAL MEDIA -->
             <div class="footer-social-container">
                 <p class="social-footer-header">Social media</p>
                 <ul class="list footer-social-list">
@@ -264,6 +268,22 @@
                             </svg></a>
                     </li>
                 </ul>
+            </div>
+
+            <!-- SUBSCRIPTION -->
+            <div class="footer-subscription-container">
+                <form class="footer-form">
+                    <p class="footer-form-header">Subscribe</p>
+                    <div class="footer-subscription-wrapper">
+                        <input type="email" name="user_email" class="footer-form-input" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail">
+                        <button type="submit" class="footer-submit-btn">Subscribe
+                            <svg class="footer-form-btn-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-message"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
