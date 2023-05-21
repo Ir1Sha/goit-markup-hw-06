@@ -728,7 +728,7 @@ img {
 }
 .footer-submit-btn:hover,
 .footer-submit-btn:focus {
-  background-color: var(--footer-accent);
+  background-color: var(--buttons-accent-background);
 }
 
 .footer-form-btn-icon {
