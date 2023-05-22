@@ -924,7 +924,6 @@ img {
 }
 
 .user-policy-link {
-  display: inline-flex;
   color: var(--modal-accent-color);
   margin-left: 4px;
 }
