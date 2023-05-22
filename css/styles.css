@@ -896,7 +896,6 @@ img {
 }
 
 .modal-form-check-descr {
-  display: flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
@@ -914,6 +913,7 @@ img {
   border-radius: 2px;
   fill: transparent;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .modal-form-check-checked:checked + .modal-form-check-descr > .modal-checkbox-icon {
@@ -925,6 +925,7 @@ img {
 
 .user-policy-link {
   color: var(--modal-accent-color);
+  margin-left: 4px;
 }
 
 .modal-form-submit-btn {
